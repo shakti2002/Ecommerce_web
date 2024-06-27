@@ -1,0 +1,260 @@
+
+.Help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .faq-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .faq-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+  }
+  
+  .faq-item summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  
+  .faq-item p {
+    margin: 10px 0;
+    padding-left: 20px;
+    font-size: 1em;
+  }
+  
+  .query-form {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; 
+  }
+  
+  .query-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+  }
+  
+  .query-form input,
+  .query-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .query-form button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .query-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .chatbot {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .chat-message {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .chat-message.user {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+  
+  .chat-message.bot {
+    background-color: #f1f0f0;
+    align-self: flex-start;
+  }
+  
+  .chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .chat-input button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+  /* src/components/HelpPage.css */
+/* .Help {
+  padding: 20px;
+}
+
+.faq ul {
+  list-style: none;
+  padding: 0;
+}
+
+.faq li {
+  margin: 10px 0;
+}
+
+.query-form input, .query-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.query-form button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.chat-message.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.chat-message.bot {
+  background-color: #f1f0f0;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+} */
